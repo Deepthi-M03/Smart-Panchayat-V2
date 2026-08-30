@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lodge a Complaint — Smart Panchayat</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-nav">
+  <a href="index.html" class="brand">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#E2A33D" stroke-width="1.6"/><circle cx="12" cy="12" r="3.4" stroke="#1F2A44" stroke-width="1.6"/><circle cx="12" cy="4.2" r="1.1" fill="#1F2A44"/><circle cx="19.8" cy="12" r="1.1" fill="#1F2A44"/><circle cx="12" cy="19.8" r="1.1" fill="#1F2A44"/><circle cx="4.2" cy="12" r="1.1" fill="#1F2A44"/></svg>
+    Smart Panchayat
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="complaint.html" class="active">Lodge a Complaint</a>
+    <a href="track.html">Track Status</a>
+    <a href="login.html">Officer Login</a>
+  </nav>
+</header>
+
+<section class="section" style="max-width:680px;">
+  <div class="section-head">
+    <span class="eyebrow">Step 1 of 1</span>
+    <h2>Lodge a complaint</h2>
+    <p>Tell us what's happening, where, and who to contact if the ward office needs more detail. You'll get a complaint ID to track progress — no login needed to check status.</p>
+  </div>
+
+  <form id="complaint-form" class="panel" enctype="multipart/form-data">
+    <div class="field-row">
+      <div class="field">
+        <label for="citizenName">Your name</label>
+        <input id="citizenName" name="citizenName" required placeholder="e.g. Lakshmi R." />
+      </div>
+      <div class="field">
+        <label for="phone">Phone number <span class="muted">(optional)</span></label>
+        <input id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" />
+        <div class="hint">Only used if the ward office needs to reach you.</div>
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="">Select a category</option>
+          <option>Water Supply</option>
+          <option>Roads & Potholes</option>
+          <option>Electricity & Streetlight</option>
+          <option>Garbage & Sanitation</option>
+          <option>Drainage & Sewage</option>
+          <option>Public Property Damage</option>
+          <option>Stray Animals</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="ward">Ward</label>
+        <select id="ward" name="ward" required><option value="">Loading wards...</option></select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="description">Describe the issue</label>
+      <textarea id="description" name="description" required placeholder="Where exactly is it, how long has it been an issue, and who's affected?"></textarea>
+      <div class="hint">Specific details (a landmark, how many days, whether children or elderly are affected) help the ward office prioritize correctly.</div>
+    </div>
+
+    <div class="field">
+      <label>Photo <span class="muted">(optional, helps verification)</span></label>
+      <div class="upload-drop" id="upload-drop">Click to choose a photo, or drag one here</div>
+      <input type="file" id="photo" name="photo" accept="image/*" style="display:none;" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submit-btn">Submit Complaint</button>
+  </form>
+
+  <div id="result-panel" style="display:none;margin-top:24px;"></div>
+</section>
+
+<footer class="site-footer">
+  <strong>Smart Panchayat</strong> — a prototype civic grievance portal for Coimbatore District, Tamil Nadu.
+</footer>
+
+<script src="js/api.js"></script>
+<script>
+async function loadWards() {
+  const wards = await apiGet("/api/wards");
+  const sel = document.getElementById("ward");
+  sel.innerHTML = `<option value="">Select your ward</option>` + wards.map(w => `<option value="${w.id}">${w.name}</option>`).join("");
+}
+loadWards();
+
+const dropZone = document.getElementById("upload-drop");
+const fileInput = document.getElementById("photo");
+dropZone.onclick = () => fileInput.click();
+fileInput.onchange = () => {
+  if (fileInput.files[0]) {
+    dropZone.textContent = `📎 ${fileInput.files[0].name}`;
+    dropZone.classList.add("has-file");
+  }
+};
+
+document.getElementById("complaint-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById("submit-btn");
+  btn.disabled = true; btn.textContent = "Submitting...";
+  try {
+    const form = document.getElementById("complaint-form");
+    const fd = new FormData(form);
+    const complaint = await apiSend("POST", "/api/complaints", fd, false, true);
+    form.style.display = "none";
+    const panel = document.getElementById("result-panel");
+    panel.style.display = "block";
+    panel.innerHTML = `
+      <div class="panel" style="text-align:center;">
+        <div class="stamp-wrap">
+          <div class="stamp">Complaint Lodged<span class="id">${complaint.id}</span></div>
+        </div>
+        <p style="margin-top:8px;">Save this ID to track your complaint's progress.</p>
+        <p class="muted" style="font-size:13px;">Initial priority assessment: ${badge("priority", complaint.priority)}
+          <br/><span style="font-size:12px;">(${complaint.priorityReasons.join(" · ")})</span></p>
+        <div style="display:flex;gap:10px;justify-content:center;margin-top:20px;">
+          <a href="track.html?id=${complaint.id}" class="btn btn-primary">Track This Complaint →</a>
+          <a href="index.html" class="btn btn-ghost" style="color:var(--ink);border-color:var(--line);">Back Home</a>
+        </div>
+      </div>`;
+  } catch (err) {
+    toast(err.message || "Something went wrong. Please try again.");
+    btn.disabled = false; btn.textContent = "Submit Complaint";
+  }
+});
+</script>
+</body>
+</html>

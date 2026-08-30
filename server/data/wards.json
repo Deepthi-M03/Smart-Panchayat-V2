@@ -1,0 +1,74 @@
+[
+  {
+    "id": "W1",
+    "name": "Ward 1 – Perur",
+    "lat": 10.984,
+    "lng": 76.872
+  },
+  {
+    "id": "W2",
+    "name": "Ward 2 – Vadavalli",
+    "lat": 11.0086,
+    "lng": 76.9077
+  },
+  {
+    "id": "W3",
+    "name": "Ward 3 – Thondamuthur",
+    "lat": 10.97,
+    "lng": 76.85
+  },
+  {
+    "id": "W4",
+    "name": "Ward 4 – Sulur",
+    "lat": 11.0273,
+    "lng": 77.1253
+  },
+  {
+    "id": "W5",
+    "name": "Ward 5 – Kinathukadavu",
+    "lat": 10.88,
+    "lng": 77.01
+  },
+  {
+    "id": "W6",
+    "name": "Ward 6 – Annur",
+    "lat": 11.227,
+    "lng": 77.108
+  },
+  {
+    "id": "W7",
+    "name": "Ward 7 – Madukkarai",
+    "lat": 10.928,
+    "lng": 76.942
+  },
+  {
+    "id": "W8",
+    "name": "Ward 8 – Karamadai",
+    "lat": 11.254,
+    "lng": 76.944
+  },
+  {
+    "id": "W9",
+    "name": "Ward 9 – Pollachi Rural",
+    "lat": 10.659,
+    "lng": 77.008
+  },
+  {
+    "id": "W10",
+    "name": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.299,
+    "lng": 76.935
+  },
+  {
+    "id": "W11",
+    "name": "Ward 11 – Anaimalai",
+    "lat": 10.642,
+    "lng": 77.095
+  },
+  {
+    "id": "W12",
+    "name": "Ward 12 – Periyanaickenpalayam",
+    "lat": 11.144,
+    "lng": 76.986
+  }
+]

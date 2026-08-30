@@ -1,0 +1,2285 @@
+[
+  {
+    "id": "SP-2026-0001",
+    "citizenName": "Lakshmi R.",
+    "phone": "9840000000",
+    "category": "Stray Animals",
+    "description": "Stray dogs chasing schoolchildren near the main road.",
+    "ward": "W9",
+    "wardName": "Ward 9 – Pollachi Rural",
+    "lat": 10.655322180934162,
+    "lng": 77.01024888766933,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Stray Animals\": 1",
+      "Urgent keyword(s) detected: children, school (+2)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-06-12T01:47:03.231Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-12T01:47:03.231Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-12T18:28:56.562Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-14T14:38:14.691Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-15T13:33:46.449Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0002",
+    "citizenName": "Meena R.",
+    "phone": "9840000097",
+    "category": "Garbage & Sanitation",
+    "description": "Waste dumped illegally behind the community hall.",
+    "ward": "W3",
+    "wardName": "Ward 3 – Thondamuthur",
+    "lat": 10.960985702397346,
+    "lng": 76.84556820774684,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-15T11:15:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-15T11:15:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-16T17:59:27.009Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-19T16:29:31.836Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0003",
+    "citizenName": "Deepa T.",
+    "phone": "9840000195",
+    "category": "Other",
+    "description": "Noise complaint regarding late-night function near residential area.",
+    "ward": "W11",
+    "wardName": "Ward 11 – Anaimalai",
+    "lat": 10.632061682486583,
+    "lng": 77.08543722987886,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Other\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-07-01T12:45:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-01T12:45:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0004",
+    "citizenName": "Arun D.",
+    "phone": "9840000293",
+    "category": "Public Property Damage",
+    "description": "Bus shelter roof sheet blown off in last week's wind.",
+    "ward": "W2",
+    "wardName": "Ward 2 – Vadavalli",
+    "lat": 11.007688525359566,
+    "lng": 76.91430690132853,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Public Property Damage\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-06-18T07:08:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-18T07:08:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-21T12:35:43.511Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0005",
+    "citizenName": "Anitha J.",
+    "phone": "9840000390",
+    "category": "Garbage & Sanitation",
+    "description": "Waste dumped illegally behind the community hall.",
+    "ward": "W9",
+    "wardName": "Ward 9 – Pollachi Rural",
+    "lat": 10.664711193119066,
+    "lng": 77.0068184507841,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-07-28T04:48:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-28T04:48:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-31T11:31:43.409Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-03T04:48:00.863Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-05T22:04:54.555Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0006",
+    "citizenName": "Geetha K.",
+    "phone": "9840000488",
+    "category": "Public Property Damage",
+    "description": "Public bench and playground equipment vandalized.",
+    "ward": "W2",
+    "wardName": "Ward 2 – Vadavalli",
+    "lat": 11.018242938263203,
+    "lng": 76.89925039334099,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Public Property Damage\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-07-27T02:25:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-27T02:25:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-29T05:01:47.585Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-30T10:48:04.392Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0007",
+    "citizenName": "Arun D.",
+    "phone": "9840000586",
+    "category": "Stray Animals",
+    "description": "Cattle roaming unattended causing traffic near the market.",
+    "ward": "W9",
+    "wardName": "Ward 9 – Pollachi Rural",
+    "lat": 10.64916213171469,
+    "lng": 76.99819070598035,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Stray Animals\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-06-02T03:33:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-02T03:33:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0008",
+    "citizenName": "Geetha K.",
+    "phone": "9840000683",
+    "category": "Water Supply",
+    "description": "No water supply in our street for the past 4 days.",
+    "ward": "W6",
+    "wardName": "Ward 6 – Annur",
+    "lat": 11.225116111504512,
+    "lng": 77.11779254588271,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Water Supply\": 3",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-06-11T03:58:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-11T03:58:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-12T21:53:25.870Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-14T03:14:51.725Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0009",
+    "citizenName": "Deepa T.",
+    "phone": "9840000781",
+    "category": "Other",
+    "description": "Request for a new water tank in the eastern part of the ward.",
+    "ward": "W5",
+    "wardName": "Ward 5 – Kinathukadavu",
+    "lat": 10.876108872929686,
+    "lng": 77.00884890010369,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Other\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-08-24T06:03:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-24T06:03:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-27T10:05:42.992Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-29T00:32:01.875Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-29T16:56:43.078Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0010",
+    "citizenName": "Muthu K.",
+    "phone": "9840000879",
+    "category": "Water Supply",
+    "description": "Pipeline leak near the bus stop, water pooling on the road.",
+    "ward": "W8",
+    "wardName": "Ward 8 – Karamadai",
+    "lat": 11.248226489106967,
+    "lng": 76.93793631222024,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "MEDIUM",
+    "priorityScore": 4,
+    "priorityReasons": [
+      "Base weight for \"Water Supply\": 3",
+      "Urgent keyword(s) detected: leak (+1)",
+      "Total score 4 → MEDIUM"
+    ],
+    "createdAt": "2026-05-30T07:44:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-05-30T07:44:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-01T11:19:11.851Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0011",
+    "citizenName": "Meena R.",
+    "phone": "9840000977",
+    "category": "Water Supply",
+    "description": "No water supply in our street for the past 4 days.",
+    "ward": "W1",
+    "wardName": "Ward 1 – Perur",
+    "lat": 10.975511840705535,
+    "lng": 76.87958168516903,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Water Supply\": 3",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-06-12T02:33:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-12T02:33:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-14T15:09:50.691Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0012",
+    "citizenName": "Lakshmi R.",
+    "phone": "9840001074",
+    "category": "Garbage & Sanitation",
+    "description": "Public toilet block needs urgent cleaning, unusable currently.",
+    "ward": "W5",
+    "wardName": "Ward 5 – Kinathukadavu",
+    "lat": 10.873985476683435,
+    "lng": 77.01809107296133,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-08-01T09:28:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-01T09:28:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0013",
+    "citizenName": "Geetha K.",
+    "phone": "9840001172",
+    "category": "Garbage & Sanitation",
+    "description": "Waste dumped illegally behind the community hall.",
+    "ward": "W2",
+    "wardName": "Ward 2 – Vadavalli",
+    "lat": 11.014389482090744,
+    "lng": 76.91134086536607,
+    "photoPath": null,
+    "status": "REJECTED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-30T10:36:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-30T10:36:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-03T09:53:12.556Z"
+      },
+      {
+        "status": "REJECTED",
+        "note": "Closed — duplicate or outside panchayat jurisdiction.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-06T10:56:04.713Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0014",
+    "citizenName": "Saravanan P.",
+    "phone": "9840001270",
+    "category": "Other",
+    "description": "Noise complaint regarding late-night function near residential area.",
+    "ward": "W8",
+    "wardName": "Ward 8 – Karamadai",
+    "lat": 11.262671912801444,
+    "lng": 76.93960200485006,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Other\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-05-29T13:00:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-05-29T13:00:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0015",
+    "citizenName": "Deepa T.",
+    "phone": "9840001367",
+    "category": "Drainage & Sewage",
+    "description": "Sewage backing up into the street after last night's rain.",
+    "ward": "W9",
+    "wardName": "Ward 9 – Pollachi Rural",
+    "lat": 10.663044156765007,
+    "lng": 77.00173966228418,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "priorityScore": 4,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Urgent keyword(s) detected: sewage (+1)",
+      "Total score 4 → MEDIUM"
+    ],
+    "createdAt": "2026-06-10T06:20:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-10T06:20:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-12T16:44:49.901Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-15T22:12:40.106Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0016",
+    "citizenName": "Priya M.",
+    "phone": "9840001465",
+    "category": "Electricity & Streetlight",
+    "description": "Frequent power cuts in the evening, no prior notice given.",
+    "ward": "W3",
+    "wardName": "Ward 3 – Thondamuthur",
+    "lat": 10.977075728784646,
+    "lng": 76.84080719635377,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-07-28T10:48:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-28T10:48:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-31T01:10:19.064Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-02T18:17:35.737Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0017",
+    "citizenName": "Kavitha S.",
+    "phone": "9840001563",
+    "category": "Other",
+    "description": "Request for a new water tank in the eastern part of the ward.",
+    "ward": "W5",
+    "wardName": "Ward 5 – Kinathukadavu",
+    "lat": 10.883486818770953,
+    "lng": 77.01169607890975,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Other\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-07-10T12:35:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-10T12:35:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-13T08:30:49.585Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-14T08:37:09.062Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0018",
+    "citizenName": "Anitha J.",
+    "phone": "9840001660",
+    "category": "Drainage & Sewage",
+    "description": "Sewage backing up into the street after last night's rain.",
+    "ward": "W8",
+    "wardName": "Ward 8 – Karamadai",
+    "lat": 11.254541665259008,
+    "lng": 76.95229190204955,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "MEDIUM",
+    "priorityScore": 4,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Urgent keyword(s) detected: sewage (+1)",
+      "Total score 4 → MEDIUM"
+    ],
+    "createdAt": "2026-06-23T02:06:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-23T02:06:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-24T03:16:14.399Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-27T03:44:35.827Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-29T03:42:26.922Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0019",
+    "citizenName": "Karthik B.",
+    "phone": "9840001758",
+    "category": "Other",
+    "description": "Request for a new water tank in the eastern part of the ward.",
+    "ward": "W7",
+    "wardName": "Ward 7 – Madukkarai",
+    "lat": 10.93311967451013,
+    "lng": 76.94935004311775,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Other\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-05-28T05:02:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-05-28T05:02:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-05-29T19:23:40.951Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-05-31T15:53:07.326Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0020",
+    "citizenName": "Anitha J.",
+    "phone": "9840001856",
+    "category": "Public Property Damage",
+    "description": "Public bench and playground equipment vandalized.",
+    "ward": "W10",
+    "wardName": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.303875282303364,
+    "lng": 76.93197079500204,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Public Property Damage\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-06-19T08:51:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-19T08:51:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-20T20:34:24.637Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-21T09:00:26.963Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-22T20:34:42.203Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0021",
+    "citizenName": "Saravanan P.",
+    "phone": "9840001954",
+    "category": "Garbage & Sanitation",
+    "description": "Public toilet block needs urgent cleaning, unusable currently.",
+    "ward": "W5",
+    "wardName": "Ward 5 – Kinathukadavu",
+    "lat": 10.870400419964756,
+    "lng": 77.01339583302584,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-07-25T03:03:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-25T03:03:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-26T10:10:46.299Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-28T17:32:07.394Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0022",
+    "citizenName": "Lakshmi R.",
+    "phone": "9840002051",
+    "category": "Roads & Potholes",
+    "description": "Speed breaker needed near the school gate, vehicles speeding.",
+    "ward": "W10",
+    "wardName": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.307535432998801,
+    "lng": 76.94480819943826,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Roads & Potholes\": 2",
+      "Urgent keyword(s) detected: school (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-07-22T04:03:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-22T04:03:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-23T03:15:51.516Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-26T03:00:34.475Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-29T11:42:15.419Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0023",
+    "citizenName": "Geetha K.",
+    "phone": "9840002149",
+    "category": "Drainage & Sewage",
+    "description": "Sewage backing up into the street after last night's rain.",
+    "ward": "W11",
+    "wardName": "Ward 11 – Anaimalai",
+    "lat": 10.649250030468254,
+    "lng": 77.09156391968537,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "MEDIUM",
+    "priorityScore": 4,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Urgent keyword(s) detected: sewage (+1)",
+      "Total score 4 → MEDIUM"
+    ],
+    "createdAt": "2026-08-16T08:16:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-16T08:16:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0024",
+    "citizenName": "Deepa T.",
+    "phone": "9840002247",
+    "category": "Garbage & Sanitation",
+    "description": "Waste dumped illegally behind the community hall.",
+    "ward": "W1",
+    "wardName": "Ward 1 – Perur",
+    "lat": 10.993183176823836,
+    "lng": 76.87388393813202,
+    "photoPath": null,
+    "status": "REJECTED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-08T04:15:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-08T04:15:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-11T00:17:08.180Z"
+      },
+      {
+        "status": "REJECTED",
+        "note": "Closed — duplicate or outside panchayat jurisdiction.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-12T22:10:38.016Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0025",
+    "citizenName": "Ramesh V.",
+    "phone": "9840002344",
+    "category": "Electricity & Streetlight",
+    "description": "Live wire hanging low near the bus stand after the storm.",
+    "ward": "W11",
+    "wardName": "Ward 11 – Anaimalai",
+    "lat": 10.639328124374286,
+    "lng": 77.10122034517114,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Urgent keyword(s) detected: live wire (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-06-12T05:20:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-12T05:20:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-14T00:37:09.704Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0026",
+    "citizenName": "Karthik B.",
+    "phone": "9840002442",
+    "category": "Electricity & Streetlight",
+    "description": "Frequent power cuts in the evening, no prior notice given.",
+    "ward": "W4",
+    "wardName": "Ward 4 – Sulur",
+    "lat": 11.031031655816376,
+    "lng": 77.12221035349371,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-07-30T07:54:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-30T07:54:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-31T15:13:33.294Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-03T00:06:22.380Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-06T03:32:26.466Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0027",
+    "citizenName": "Ramesh V.",
+    "phone": "9840002540",
+    "category": "Roads & Potholes",
+    "description": "Large pothole near the temple junction causing two-wheeler accidents.",
+    "ward": "W6",
+    "wardName": "Ward 6 – Annur",
+    "lat": 11.21813778824979,
+    "lng": 77.09916437699005,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Roads & Potholes\": 2",
+      "Urgent keyword(s) detected: accident (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-07-30T05:17:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-30T05:17:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-02T15:31:06.339Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-04T12:29:37.723Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-07T08:41:29.724Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0028",
+    "citizenName": "Geetha K.",
+    "phone": "9840002637",
+    "category": "Drainage & Sewage",
+    "description": "Drain cover missing near the community hall, safety hazard.",
+    "ward": "W4",
+    "wardName": "Ward 4 – Sulur",
+    "lat": 11.031309686392285,
+    "lng": 77.1206307988572,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-06-27T03:51:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-27T03:51:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0029",
+    "citizenName": "Karthik B.",
+    "phone": "9840002735",
+    "category": "Stray Animals",
+    "description": "Cattle roaming unattended causing traffic near the market.",
+    "ward": "W11",
+    "wardName": "Ward 11 – Anaimalai",
+    "lat": 10.648976651003288,
+    "lng": 77.09182382625491,
+    "photoPath": null,
+    "status": "REJECTED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Stray Animals\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-06-12T11:12:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-12T11:12:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-14T10:22:03.550Z"
+      },
+      {
+        "status": "REJECTED",
+        "note": "Closed — duplicate or outside panchayat jurisdiction.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-17T21:50:18.360Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0030",
+    "citizenName": "Meena R.",
+    "phone": "9840002833",
+    "category": "Water Supply",
+    "description": "No water supply in our street for the past 4 days.",
+    "ward": "W6",
+    "wardName": "Ward 6 – Annur",
+    "lat": 11.236295163267407,
+    "lng": 77.1032922926032,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Water Supply\": 3",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-05-30T12:32:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-05-30T12:32:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-01T17:36:17.250Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0031",
+    "citizenName": "Saravanan P.",
+    "phone": "9840002931",
+    "category": "Stray Animals",
+    "description": "Stray dogs chasing schoolchildren near the main road.",
+    "ward": "W1",
+    "wardName": "Ward 1 – Perur",
+    "lat": 10.988388673493617,
+    "lng": 76.86862289804617,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Stray Animals\": 1",
+      "Urgent keyword(s) detected: children, school (+2)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-07-05T10:04:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-05T10:04:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-08T16:55:23.177Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-11T11:56:05.105Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0032",
+    "citizenName": "Deepa T.",
+    "phone": "9840003028",
+    "category": "Public Property Damage",
+    "description": "Compound wall of the government school damaged and unsafe.",
+    "ward": "W3",
+    "wardName": "Ward 3 – Thondamuthur",
+    "lat": 10.962560309744946,
+    "lng": 76.85878856497102,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Public Property Damage\": 1",
+      "Urgent keyword(s) detected: school (+1)",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-05-28T08:03:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-05-28T08:03:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0033",
+    "citizenName": "Kavitha S.",
+    "phone": "9840003126",
+    "category": "Garbage & Sanitation",
+    "description": "Public toilet block needs urgent cleaning, unusable currently.",
+    "ward": "W6",
+    "wardName": "Ward 6 – Annur",
+    "lat": 11.21759604296858,
+    "lng": 77.09921387528124,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-13T10:26:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-13T10:26:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-15T11:32:13.992Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-17T06:39:29.318Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-20T13:22:31.395Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0034",
+    "citizenName": "Muthu K.",
+    "phone": "9840003224",
+    "category": "Drainage & Sewage",
+    "description": "Open drain overflow near the school entrance, bad smell for children.",
+    "ward": "W2",
+    "wardName": "Ward 2 – Vadavalli",
+    "lat": 11.01847382078951,
+    "lng": 76.91480459746452,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "HIGH",
+    "priorityScore": 6,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Urgent keyword(s) detected: overflow, children, school (+3)",
+      "Total score 6 → HIGH"
+    ],
+    "createdAt": "2026-08-20T09:01:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-20T09:01:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-22T09:13:38.733Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-23T01:01:08.562Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0035",
+    "citizenName": "Anitha J.",
+    "phone": "9840003321",
+    "category": "Water Supply",
+    "description": "Water tanker did not arrive on the scheduled day this week.",
+    "ward": "W7",
+    "wardName": "Ward 7 – Madukkarai",
+    "lat": 10.931540072528113,
+    "lng": 76.93263382646295,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Water Supply\": 3",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-08-30T03:59:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-30T03:59:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0036",
+    "citizenName": "Arun D.",
+    "phone": "9840003419",
+    "category": "Other",
+    "description": "Request for a new water tank in the eastern part of the ward.",
+    "ward": "W12",
+    "wardName": "Ward 12 – Periyanaickenpalayam",
+    "lat": 11.151529159146365,
+    "lng": 76.994650159611,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Other\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-08-06T08:26:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-06T08:26:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-07T04:05:23.671Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0037",
+    "citizenName": "Muthu K.",
+    "phone": "9840003517",
+    "category": "Garbage & Sanitation",
+    "description": "Garbage not collected from our street for over a week.",
+    "ward": "W1",
+    "wardName": "Ward 1 – Perur",
+    "lat": 10.986964903139228,
+    "lng": 76.86710221451668,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-07-15T09:46:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-15T09:46:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0038",
+    "citizenName": "Geetha K.",
+    "phone": "9840003614",
+    "category": "Garbage & Sanitation",
+    "description": "Waste dumped illegally behind the community hall.",
+    "ward": "W5",
+    "wardName": "Ward 5 – Kinathukadavu",
+    "lat": 10.882707191412418,
+    "lng": 77.0042033968196,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-15T07:34:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-15T07:34:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-16T14:24:11.990Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0039",
+    "citizenName": "Muthu K.",
+    "phone": "9840003712",
+    "category": "Garbage & Sanitation",
+    "description": "Waste dumped illegally behind the community hall.",
+    "ward": "W8",
+    "wardName": "Ward 8 – Karamadai",
+    "lat": 11.262894873888214,
+    "lng": 76.94213257842794,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-07-03T12:24:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-03T12:24:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-04T19:32:40.186Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-07T06:21:01.860Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0040",
+    "citizenName": "Deepa T.",
+    "phone": "9840003810",
+    "category": "Electricity & Streetlight",
+    "description": "Live wire hanging low near the bus stand after the storm.",
+    "ward": "W10",
+    "wardName": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.296279633197914,
+    "lng": 76.93698858804005,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Urgent keyword(s) detected: live wire (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-07-13T11:26:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-13T11:26:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-14T16:21:55.310Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-15T12:44:27.896Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-18T06:47:26.545Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0041",
+    "citizenName": "Karthik B.",
+    "phone": "9840003908",
+    "category": "Roads & Potholes",
+    "description": "Road collapsed partially after the rains near the canal bridge.",
+    "ward": "W10",
+    "wardName": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.291154385364282,
+    "lng": 76.9303453416319,
+    "photoPath": null,
+    "status": "ACKNOWLEDGED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Roads & Potholes\": 2",
+      "Urgent keyword(s) detected: collapsed (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-06-29T05:54:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-29T05:54:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-30T22:51:12.370Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0042",
+    "citizenName": "Suresh N.",
+    "phone": "9840004005",
+    "category": "Garbage & Sanitation",
+    "description": "Public toilet block needs urgent cleaning, unusable currently.",
+    "ward": "W10",
+    "wardName": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.304620071416439,
+    "lng": 76.93201456755764,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-21T03:45:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-21T03:45:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-23T20:44:25.645Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-27T03:10:05.783Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0043",
+    "citizenName": "Saravanan P.",
+    "phone": "9840004103",
+    "category": "Roads & Potholes",
+    "description": "Road collapsed partially after the rains near the canal bridge.",
+    "ward": "W3",
+    "wardName": "Ward 3 – Thondamuthur",
+    "lat": 10.969658124123772,
+    "lng": 76.84024804203361,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Roads & Potholes\": 2",
+      "Urgent keyword(s) detected: collapsed (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-08-24T10:56:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-24T10:56:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-25T12:41:32.436Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-28T13:41:46.204Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0044",
+    "citizenName": "Karthik B.",
+    "phone": "9840004201",
+    "category": "Other",
+    "description": "Request for a new water tank in the eastern part of the ward.",
+    "ward": "W12",
+    "wardName": "Ward 12 – Periyanaickenpalayam",
+    "lat": 11.153400019874024,
+    "lng": 76.99263075136636,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Other\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-08-05T06:33:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-05T06:33:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-06T11:15:25.759Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-08T23:53:30.019Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0045",
+    "citizenName": "Deepa T.",
+    "phone": "9840004298",
+    "category": "Garbage & Sanitation",
+    "description": "Garbage not collected from our street for over a week.",
+    "ward": "W4",
+    "wardName": "Ward 4 – Sulur",
+    "lat": 11.032748504292773,
+    "lng": 77.12814106953061,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Garbage & Sanitation\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-04T03:51:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-04T03:51:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0046",
+    "citizenName": "Arun D.",
+    "phone": "9840004396",
+    "category": "Electricity & Streetlight",
+    "description": "Streetlight on Mill Road has not worked for two weeks.",
+    "ward": "W7",
+    "wardName": "Ward 7 – Madukkarai",
+    "lat": 10.935959129138359,
+    "lng": 76.95009871652964,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-06-09T08:42:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-09T08:42:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-12T14:31:22.372Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-15T16:13:50.272Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-06-17T01:20:42.183Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0047",
+    "citizenName": "Deepa T.",
+    "phone": "9840004494",
+    "category": "Roads & Potholes",
+    "description": "Speed breaker needed near the school gate, vehicles speeding.",
+    "ward": "W6",
+    "wardName": "Ward 6 – Annur",
+    "lat": 11.22559938241353,
+    "lng": 77.1053447698195,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Roads & Potholes\": 2",
+      "Urgent keyword(s) detected: school (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-08-02T07:28:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-02T07:28:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-05T06:38:14.868Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-06T18:40:23.200Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0048",
+    "citizenName": "Meena R.",
+    "phone": "9840004591",
+    "category": "Water Supply",
+    "description": "Pipeline leak near the bus stop, water pooling on the road.",
+    "ward": "W10",
+    "wardName": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.30683509911256,
+    "lng": 76.93035304891497,
+    "photoPath": null,
+    "status": "REJECTED",
+    "priority": "MEDIUM",
+    "priorityScore": 4,
+    "priorityReasons": [
+      "Base weight for \"Water Supply\": 3",
+      "Urgent keyword(s) detected: leak (+1)",
+      "Total score 4 → MEDIUM"
+    ],
+    "createdAt": "2026-08-12T09:37:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-12T09:37:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-13T04:28:46.826Z"
+      },
+      {
+        "status": "REJECTED",
+        "note": "Closed — duplicate or outside panchayat jurisdiction.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-15T12:33:19.334Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0049",
+    "citizenName": "Geetha K.",
+    "phone": "9840004689",
+    "category": "Roads & Potholes",
+    "description": "Large pothole near the temple junction causing two-wheeler accidents.",
+    "ward": "W9",
+    "wardName": "Ward 9 – Pollachi Rural",
+    "lat": 10.654007118760576,
+    "lng": 76.99904743894076,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Roads & Potholes\": 2",
+      "Urgent keyword(s) detected: accident (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-08-30T09:27:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-30T09:27:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-09-02T15:28:51.110Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-09-04T05:32:18.456Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0050",
+    "citizenName": "Suresh N.",
+    "phone": "9840004787",
+    "category": "Electricity & Streetlight",
+    "description": "Live wire hanging low near the bus stand after the storm.",
+    "ward": "W6",
+    "wardName": "Ward 6 – Annur",
+    "lat": 11.21914282605281,
+    "lng": 77.11514271240935,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Urgent keyword(s) detected: live wire (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-08-15T02:04:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-15T02:04:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0051",
+    "citizenName": "Geetha K.",
+    "phone": "9840004885",
+    "category": "Drainage & Sewage",
+    "description": "Open drain overflow near the school entrance, bad smell for children.",
+    "ward": "W7",
+    "wardName": "Ward 7 – Madukkarai",
+    "lat": 10.936285651414519,
+    "lng": 76.95016335899507,
+    "photoPath": null,
+    "status": "SUBMITTED",
+    "priority": "HIGH",
+    "priorityScore": 6,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Urgent keyword(s) detected: overflow, children, school (+3)",
+      "Total score 6 → HIGH"
+    ],
+    "createdAt": "2026-06-07T06:30:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-07T06:30:03.232Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0052",
+    "citizenName": "Ramesh V.",
+    "phone": "9840004982",
+    "category": "Electricity & Streetlight",
+    "description": "Live wire hanging low near the bus stand after the storm.",
+    "ward": "W3",
+    "wardName": "Ward 3 – Thondamuthur",
+    "lat": 10.979018321103368,
+    "lng": 76.84324319972755,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Urgent keyword(s) detected: live wire (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-07-03T04:14:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-03T04:14:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-05T01:22:53.645Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-06T00:02:04.273Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-07-07T15:08:18.370Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0053",
+    "citizenName": "Muthu K.",
+    "phone": "9840005080",
+    "category": "Electricity & Streetlight",
+    "description": "Frequent power cuts in the evening, no prior notice given.",
+    "ward": "W10",
+    "wardName": "Ward 10 – Mettupalayam Rural",
+    "lat": 11.297799487901422,
+    "lng": 76.9300145512273,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Electricity & Streetlight\": 2",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-07-06T09:41:03.232Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-07-06T09:41:03.232Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-09T20:35:05.459Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-07-12T02:18:54.852Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-07-14T16:34:20.689Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0054",
+    "citizenName": "Lakshmi R.",
+    "phone": "9840005178",
+    "category": "Water Supply",
+    "description": "Pipeline leak near the bus stop, water pooling on the road.",
+    "ward": "W3",
+    "wardName": "Ward 3 – Thondamuthur",
+    "lat": 10.96586756931436,
+    "lng": 76.84340488304777,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "MEDIUM",
+    "priorityScore": 4,
+    "priorityReasons": [
+      "Base weight for \"Water Supply\": 3",
+      "Urgent keyword(s) detected: leak (+1)",
+      "Total score 4 → MEDIUM"
+    ],
+    "createdAt": "2026-06-19T04:24:03.233Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-06-19T04:24:03.233Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-06-21T17:50:15.501Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-22T08:59:46.560Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-06-23T03:38:47.673Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0055",
+    "citizenName": "Geetha K.",
+    "phone": "9840005275",
+    "category": "Drainage & Sewage",
+    "description": "Open drain overflow near the school entrance, bad smell for children.",
+    "ward": "W4",
+    "wardName": "Ward 4 – Sulur",
+    "lat": 11.026741555727298,
+    "lng": 77.13102208952463,
+    "photoPath": null,
+    "status": "REJECTED",
+    "priority": "HIGH",
+    "priorityScore": 6,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Urgent keyword(s) detected: overflow, children, school (+3)",
+      "Total score 6 → HIGH"
+    ],
+    "createdAt": "2026-08-19T03:24:03.233Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-19T03:24:03.233Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-21T19:31:40.814Z"
+      },
+      {
+        "status": "REJECTED",
+        "note": "Closed — duplicate or outside panchayat jurisdiction.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-25T04:34:31.132Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0056",
+    "citizenName": "Lakshmi R.",
+    "phone": "9840005373",
+    "category": "Public Property Damage",
+    "description": "Bus shelter roof sheet blown off in last week's wind.",
+    "ward": "W11",
+    "wardName": "Ward 11 – Anaimalai",
+    "lat": 10.641115900489027,
+    "lng": 77.087333677872,
+    "photoPath": null,
+    "status": "RESOLVED",
+    "priority": "LOW",
+    "priorityScore": 1,
+    "priorityReasons": [
+      "Base weight for \"Public Property Damage\": 1",
+      "Total score 1 → LOW"
+    ],
+    "createdAt": "2026-08-05T09:54:03.233Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-05T09:54:03.233Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-08T09:07:39.416Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-11T02:04:31.028Z"
+      },
+      {
+        "status": "RESOLVED",
+        "note": "Issue resolved and verified by ward officer.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-12T19:35:33.879Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0057",
+    "citizenName": "Suresh N.",
+    "phone": "9840005471",
+    "category": "Roads & Potholes",
+    "description": "Large pothole near the temple junction causing two-wheeler accidents.",
+    "ward": "W4",
+    "wardName": "Ward 4 – Sulur",
+    "lat": 11.034296583437246,
+    "lng": 77.1246977113659,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "priorityScore": 3,
+    "priorityReasons": [
+      "Base weight for \"Roads & Potholes\": 2",
+      "Urgent keyword(s) detected: accident (+1)",
+      "Total score 3 → MEDIUM"
+    ],
+    "createdAt": "2026-08-26T05:19:03.233Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-26T05:19:03.233Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-28T21:35:40.344Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-30T12:42:39.991Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0058",
+    "citizenName": "Arun D.",
+    "phone": "9840005568",
+    "category": "Public Property Damage",
+    "description": "Compound wall of the government school damaged and unsafe.",
+    "ward": "W3",
+    "wardName": "Ward 3 – Thondamuthur",
+    "lat": 10.968868911038829,
+    "lng": 76.85602220853399,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "LOW",
+    "priorityScore": 2,
+    "priorityReasons": [
+      "Base weight for \"Public Property Damage\": 1",
+      "Urgent keyword(s) detected: school (+1)",
+      "Total score 2 → LOW"
+    ],
+    "createdAt": "2026-08-04T05:57:03.233Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-04T05:57:03.233Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-05T14:48:16.145Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer R. Balakrishnan",
+        "timestamp": "2026-08-07T19:15:23.819Z"
+      }
+    ]
+  },
+  {
+    "id": "SP-2026-0900",
+    "citizenName": "Selvi A.",
+    "phone": "9840012345",
+    "category": "Drainage & Sewage",
+    "description": "Sewage overflow flooding the lane right next to the primary school gate, children wading through it every morning.",
+    "ward": "W1",
+    "wardName": "Ward 1 – Perur",
+    "lat": 10.984,
+    "lng": 76.872,
+    "photoPath": null,
+    "status": "IN_PROGRESS",
+    "priority": "HIGH",
+    "priorityScore": 8,
+    "priorityReasons": [
+      "Base weight for \"Drainage & Sewage\": 3",
+      "Urgent keyword(s) detected: overflow, flood, sewage, children, school (+5)",
+      "Total score 8 → HIGH"
+    ],
+    "createdAt": "2026-08-24T12:12:03.233Z",
+    "updates": [
+      {
+        "status": "SUBMITTED",
+        "note": "Complaint lodged by citizen.",
+        "byOfficer": null,
+        "timestamp": "2026-08-24T12:12:03.233Z"
+      },
+      {
+        "status": "ACKNOWLEDGED",
+        "note": "Complaint reviewed and acknowledged by ward office.",
+        "byOfficer": "Officer S. Meenakshi",
+        "timestamp": "2026-08-26T11:57:37.632Z"
+      },
+      {
+        "status": "IN_PROGRESS",
+        "note": "Field team assigned and work in progress.",
+        "byOfficer": "Officer M. Suriya",
+        "timestamp": "2026-08-27T15:58:50.711Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Track a Complaint — Smart Panchayat</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-nav">
+  <a href="index.html" class="brand">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#E2A33D" stroke-width="1.6"/><circle cx="12" cy="12" r="3.4" stroke="#1F2A44" stroke-width="1.6"/><circle cx="12" cy="4.2" r="1.1" fill="#1F2A44"/><circle cx="19.8" cy="12" r="1.1" fill="#1F2A44"/><circle cx="12" cy="19.8" r="1.1" fill="#1F2A44"/><circle cx="4.2" cy="12" r="1.1" fill="#1F2A44"/></svg>
+    Smart Panchayat
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="complaint.html">Lodge a Complaint</a>
+    <a href="track.html" class="active">Track Status</a>
+    <a href="login.html">Officer Login</a>
+  </nav>
+</header>
+
+<section class="section" style="max-width:680px;">
+  <div class="section-head">
+    <span class="eyebrow">Track</span>
+    <h2>Check your complaint's status</h2>
+    <p>Enter the complaint ID you received when you submitted your report — it looks like <span class="id-mono">SP-2026-0042</span>.</p>
+  </div>
+
+  <div class="panel" style="display:flex;gap:10px;">
+    <input id="track-id" placeholder="e.g. SP-2026-0042" style="flex:1;padding:11px 13px;border:1.5px solid var(--line);border-radius:8px;" />
+    <button class="btn btn-primary" id="track-btn">Track</button>
+  </div>
+
+  <div id="track-result" style="margin-top:24px;"></div>
+</section>
+
+<footer class="site-footer">
+  <strong>Smart Panchayat</strong> — a prototype civic grievance portal for Coimbatore District, Tamil Nadu.
+</footer>
+
+<script src="js/api.js"></script>
+<script>
+async function track(id) {
+  const box = document.getElementById("track-result");
+  box.innerHTML = `<div class="muted">Looking up ${id}...</div>`;
+  try {
+    const c = await apiGet(`/api/complaints/${encodeURIComponent(id)}`);
+    box.innerHTML = `
+      <div class="panel">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;">
+          <div>
+            <span class="id-mono muted">${c.id}</span>
+            <h3 style="margin-top:4px;">${c.category}</h3>
+          </div>
+          <div style="display:flex;gap:8px;">${badge("status", c.status)}${badge("priority", c.priority)}</div>
+        </div>
+        <p style="margin:14px 0;">${c.description}</p>
+        <p class="muted" style="font-size:13px;">${c.wardName} · Lodged ${fmtDate(c.createdAt)}${c.photoPath ? ` · <a href="${API_BASE}${c.photoPath}" target="_blank">View photo</a>` : ""}</p>
+
+        <h3 style="margin-top:26px;font-size:16px;">Progress ledger</h3>
+        <div class="ledger" style="margin-top:14px;">
+          ${c.updates.map((u, i) => `
+            <div class="ledger-entry ${i === c.updates.length - 1 && (u.status === 'RESOLVED' || u.status === 'REJECTED') ? 'done' : (i < c.updates.length - 1 ? 'done' : '')}">
+              <div class="date">${fmtDate(u.timestamp)}</div>
+              <div class="title">${STATUS_LABELS[u.status] || u.status}</div>
+              ${u.note ? `<div class="note">${u.note}</div>` : ""}
+              ${u.byOfficer ? `<div class="by">— ${u.byOfficer}</div>` : ""}
+            </div>
+          `).join("")}
+        </div>
+      </div>`;
+  } catch (err) {
+    box.innerHTML = `<div class="panel empty-state">No complaint found with ID <b>${id}</b>. Double-check the ID from your confirmation and try again.</div>`;
+  }
+}
+
+document.getElementById("track-btn").onclick = () => {
+  const id = document.getElementById("track-id").value.trim().toUpperCase();
+  if (id) track(id);
+};
+document.getElementById("track-id").addEventListener("keydown", (e) => { if (e.key === "Enter") document.getElementById("track-btn").click(); });
+
+const params = new URLSearchParams(location.search);
+if (params.get("id")) {
+  document.getElementById("track-id").value = params.get("id");
+  track(params.get("id"));
+}
+</script>
+</body>
+</html>

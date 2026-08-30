@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard — Smart Panchayat</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  body{background:var(--paper);}
+</style>
+</head>
+<body>
+
+<div class="dash-shell">
+  <aside class="dash-sidebar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#E2A33D" stroke-width="1.6"/><circle cx="12" cy="12" r="3.4" stroke="#fff" stroke-width="1.6"/><circle cx="12" cy="4.2" r="1.1" fill="#fff"/><circle cx="19.8" cy="12" r="1.1" fill="#fff"/><circle cx="12" cy="19.8" r="1.1" fill="#fff"/><circle cx="4.2" cy="12" r="1.1" fill="#fff"/></svg>
+      Smart Panchayat
+    </div>
+    <nav id="tabs">
+      <button data-tab="overview" class="active">Overview</button>
+      <button data-tab="register">Complaints Register</button>
+      <button data-tab="map">Ward Map</button>
+      <button data-tab="analytics">Analytics</button>
+    </nav>
+    <div class="who" id="who-box">Signed in</div>
+    <button class="btn secondary" id="logout-btn" style="background:transparent;color:#B8C0DB;border:1px solid rgba(255,255,255,0.2);margin-top:6px;">Sign out</button>
+  </aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <h1 id="page-title">Overview</h1>
+      <a href="index.html" class="muted" style="font-size:13px;text-decoration:none;">← Citizen site</a>
+    </div>
+
+    <section id="tab-overview"></section>
+    <section id="tab-register" style="display:none;"></section>
+    <section id="tab-map" style="display:none;"></section>
+    <section id="tab-analytics" style="display:none;"></section>
+  </main>
+</div>
+
+<script src="js/api.js"></script>
+<script>
+// ---- auth guard ----
+const token = localStorage.getItem("sp_token");
+const user = JSON.parse(localStorage.getItem("sp_user") || "null");
+if (!token || !user) location.href = "login.html";
+
+document.getElementById("who-box").innerHTML = `${user.name}<br/><span style="opacity:0.7;">${user.role}${user.ward ? " · " + user.ward : " · District-wide"}</span>`;
+document.getElementById("logout-btn").onclick = () => { localStorage.removeItem("sp_token"); localStorage.removeItem("sp_user"); location.href = "login.html"; };
+
+const TITLES = { overview: "Overview", register: "Complaints Register", map: "Ward Map", analytics: "Analytics" };
+document.querySelectorAll("#tabs button").forEach(btn => {
+  btn.onclick = () => switchTab(btn.dataset.tab);
+});
+function switchTab(tab) {
+  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  document.querySelectorAll("[id^='tab-']").forEach(s => s.style.display = "none");
+  document.getElementById("tab-" + tab).style.display = "block";
+  document.getElementById("page-title").textContent = TITLES[tab];
+  if (tab === "overview") renderOverview();
+  if (tab === "register") renderRegister();
+  if (tab === "map") renderMap();
+  if (tab === "analytics") renderAnalytics();
+}
+
+// ---------------- OVERVIEW ----------------
+async function renderOverview() {
+  const el = document.getElementById("tab-overview");
+  el.innerHTML = `<div class="muted">Loading...</div>`;
+  try {
+    const [complaints, analytics] = await Promise.all([apiGet("/api/complaints", true), apiGet("/api/analytics", true)]);
+    const recent = complaints.slice(0, 6);
+    el.innerHTML = `
+      <div class="stat-cards">
+        <div class="stat-card"><div class="val">${analytics.total}</div><div class="lbl">Total Complaints</div></div>
+        <div class="stat-card"><div class="val">${analytics.byStatus.SUBMITTED || 0}</div><div class="lbl">Awaiting Review</div></div>
+        <div class="stat-card"><div class="val">${analytics.byStatus.IN_PROGRESS || 0}</div><div class="lbl">In Progress</div></div>
+        <div class="stat-card"><div class="val">${analytics.byStatus.RESOLVED || 0}</div><div class="lbl">Resolved</div></div>
+        <div class="stat-card"><div class="val">${analytics.byPriority.HIGH || 0}</div><div class="lbl">High Priority</div></div>
+        <div class="stat-card"><div class="val">${analytics.avgResolutionDays ?? "—"}</div><div class="lbl">Avg. Days to Resolve</div></div>
+      </div>
+      <div class="panel">
+        <h3 style="font-size:15px;margin-bottom:14px;">Recent Complaints</h3>
+        <table class="register">
+          <tr><th>ID</th><th>Category</th><th>Ward</th><th>Status</th><th>Priority</th><th>Lodged</th></tr>
+          ${recent.map(c => `
+            <tr>
+              <td class="id-mono">${c.id}</td><td>${c.category}</td><td>${c.wardName}</td>
+              <td>${badge("status", c.status)}</td><td>${badge("priority", c.priority)}</td>
+              <td class="muted">${fmtDate(c.createdAt)}</td>
+            </tr>`).join("")}
+        </table>
+      </div>`;
+  } catch (err) { el.innerHTML = `<div class="panel">${err.message}</div>`; }
+}
+
+// ---------------- REGISTER ----------------
+let allComplaints = [];
+async function renderRegister() {
+  const el = document.getElementById("tab-register");
+  el.innerHTML = `<div class="muted">Loading...</div>`;
+  try {
+    allComplaints = await apiGet("/api/complaints", true);
+    drawRegister(allComplaints);
+  } catch (err) { el.innerHTML = `<div class="panel">${err.message}</div>`; }
+}
+
+function drawRegister(list) {
+  const el = document.getElementById("tab-register");
+  const categories = [...new Set(allComplaints.map(c => c.category))];
+  el.innerHTML = `
+    <div class="filter-row">
+      <input id="reg-search" placeholder="Search ID, name, description..." style="min-width:220px;" />
+      <select id="reg-status"><option value="">All statuses</option>${["SUBMITTED","ACKNOWLEDGED","IN_PROGRESS","RESOLVED","REJECTED"].map(s=>`<option value="${s}">${STATUS_LABELS[s]}</option>`).join("")}</select>
+      <select id="reg-priority"><option value="">All priorities</option><option>LOW</option><option>MEDIUM</option><option>HIGH</option></select>
+      <select id="reg-category"><option value="">All categories</option>${categories.map(c=>`<option>${c}</option>`).join("")}</select>
+    </div>
+    <div class="panel" style="padding:0;overflow:hidden;">
+      <table class="register">
+        <tr><th>ID</th><th>Citizen</th><th>Category</th><th>Ward</th><th>Status</th><th>Priority</th><th>Lodged</th><th>Action</th></tr>
+        <tbody id="reg-rows"></tbody>
+      </table>
+    </div>
+    <div id="update-modal"></div>
+  `;
+  const apply = () => {
+    const q = document.getElementById("reg-search").value.toLowerCase();
+    const status = document.getElementById("reg-status").value;
+    const priority = document.getElementById("reg-priority").value;
+    const category = document.getElementById("reg-category").value;
+    let filtered = list.filter(c =>
+      (!q || c.id.toLowerCase().includes(q) || c.citizenName.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)) &&
+      (!status || c.status === status) && (!priority || c.priority === priority) && (!category || c.category === category)
+    );
+    document.getElementById("reg-rows").innerHTML = filtered.map(c => `
+      <tr>
+        <td class="id-mono">${c.id}</td><td>${c.citizenName}</td><td>${c.category}</td><td>${c.wardName}</td>
+        <td>${badge("status", c.status)}</td><td>${badge("priority", c.priority)}</td>
+        <td class="muted">${fmtDate(c.createdAt)}</td>
+        <td><button class="btn secondary" style="padding:6px 12px;font-size:12px;background:var(--indigo-night);color:#fff;border-radius:6px;" data-open="${c.id}">Update</button></td>
+      </tr>
+    `).join("") || `<tr><td colspan="8" class="empty-state">No complaints match these filters.</td></tr>`;
+    el.querySelectorAll("[data-open]").forEach(btn => btn.onclick = () => openUpdateModal(btn.dataset.open));
+  };
+  ["reg-search","reg-status","reg-priority","reg-category"].forEach(id => document.getElementById(id).addEventListener("input", apply));
+  apply();
+}
+
+function openUpdateModal(id) {
+  const c = allComplaints.find(x => x.id === id);
+  const modal = document.getElementById("update-modal");
+  modal.innerHTML = `
+    <div style="position:fixed;inset:0;background:rgba(20,28,48,0.5);display:flex;align-items:center;justify-content:center;z-index:80;" id="modal-backdrop">
+      <div class="panel" style="width:460px;max-height:80vh;overflow-y:auto;">
+        <h3 style="margin-bottom:4px;">${c.id}</h3>
+        <p class="muted" style="font-size:13px;margin-bottom:14px;">${c.category} · ${c.wardName}</p>
+        <p style="font-size:13.5px;margin-bottom:16px;">${c.description}</p>
+        <div class="field">
+          <label>New status</label>
+          <select id="modal-status">
+            ${["SUBMITTED","ACKNOWLEDGED","IN_PROGRESS","RESOLVED","REJECTED"].map(s=>`<option value="${s}" ${s===c.status?"selected":""}>${STATUS_LABELS[s]}</option>`).join("")}
+          </select>
+        </div>
+        <div class="field">
+          <label>Note (visible to citizen on tracking page)</label>
+          <textarea id="modal-note" placeholder="e.g. Field team dispatched, expect resolution within 3 days."></textarea>
+        </div>
+        <div style="display:flex;gap:10px;">
+          <button class="btn btn-primary" id="modal-save">Save Update</button>
+          <button class="btn secondary" id="modal-cancel" style="background:transparent;border:1px solid var(--line);">Cancel</button>
+        </div>
+        <div id="modal-error" style="color:#B65C38;font-size:12.5px;margin-top:8px;"></div>
+      </div>
+    </div>`;
+  document.getElementById("modal-cancel").onclick = () => modal.innerHTML = "";
+  document.getElementById("modal-backdrop").onclick = (e) => { if (e.target.id === "modal-backdrop") modal.innerHTML = ""; };
+  document.getElementById("modal-save").onclick = async () => {
+    const status = document.getElementById("modal-status").value;
+    const note = document.getElementById("modal-note").value;
+    try {
+      await apiSend("PATCH", `/api/complaints/${id}/status`, { status, note }, true);
+      modal.innerHTML = "";
+      toast(`${id} updated to ${STATUS_LABELS[status]}`);
+      renderRegister();
+    } catch (err) {
+      document.getElementById("modal-error").textContent = err.message;
+    }
+  };
+}
+
+// ---------------- MAP ----------------
+let mapInstance = null;
+async function renderMap() {
+  const el = document.getElementById("tab-map");
+  el.innerHTML = `<div class="panel" style="padding:0;"><div class="map-container" id="leaflet-map"></div></div>
+    <div class="panel" style="margin-top:16px;">
+      <b>Legend</b>
+      <div style="display:flex;gap:18px;margin-top:8px;flex-wrap:wrap;font-size:13px;">
+        <span>🟡 Submitted / Acknowledged</span><span>🔵 In Progress</span><span>🟢 Resolved</span><span>🔴 Rejected</span>
+      </div>
+    </div>`;
+  const complaints = await apiGet("/api/complaints", true);
+  if (mapInstance) { mapInstance.remove(); mapInstance = null; }
+  mapInstance = L.map("leaflet-map").setView([11.0, 76.98], 10);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "© OpenStreetMap contributors" }).addTo(mapInstance);
+  const colors = { SUBMITTED: "#E2A33D", ACKNOWLEDGED: "#E2A33D", IN_PROGRESS: "#2E5A9E", RESOLVED: "#3F6B52", REJECTED: "#B65C38" };
+  complaints.forEach(c => {
+    L.circleMarker([c.lat, c.lng], { radius: 7, color: "#fff", weight: 1.5, fillColor: colors[c.status] || "#888", fillOpacity: 0.9 })
+      .addTo(mapInstance)
+      .bindPopup(`<b>${c.id}</b><br/>${c.category}<br/>${c.wardName}<br/>${STATUS_LABELS[c.status]}`);
+  });
+}
+
+// ---------------- ANALYTICS ----------------
+async function renderAnalytics() {
+  const el = document.getElementById("tab-analytics");
+  el.innerHTML = `<div class="muted">Loading...</div>`;
+  const a = await apiGet("/api/analytics", true);
+  el.innerHTML = `
+    <div class="stat-cards">
+      <div class="stat-card"><div class="val">${a.total}</div><div class="lbl">Total Complaints</div></div>
+      <div class="stat-card"><div class="val">${a.avgResolutionDays ?? "—"}</div><div class="lbl">Avg. Days to Resolve</div></div>
+      <div class="stat-card"><div class="val">${Object.keys(a.byWard).length}</div><div class="lbl">Wards With Activity</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div class="panel"><h3 style="font-size:14px;margin-bottom:10px;">Status Distribution</h3><canvas id="c-status"></canvas></div>
+      <div class="panel"><h3 style="font-size:14px;margin-bottom:10px;">Priority Distribution</h3><canvas id="c-priority"></canvas></div>
+      <div class="panel"><h3 style="font-size:14px;margin-bottom:10px;">By Category</h3><canvas id="c-category"></canvas></div>
+      <div class="panel"><h3 style="font-size:14px;margin-bottom:10px;">Weekly Trend (last 12 weeks)</h3><canvas id="c-trend"></canvas></div>
+    </div>`;
+  const palette = ["#E2A33D","#2E5A9E","#3F6B52","#B65C38","#8792B5","#C6871F"];
+  new Chart(document.getElementById("c-status"), { type: "doughnut",
+    data: { labels: Object.keys(a.byStatus).map(s=>STATUS_LABELS[s]||s), datasets: [{ data: Object.values(a.byStatus), backgroundColor: palette }] },
+    options: { plugins: { legend: { position: "bottom", labels:{boxWidth:10,font:{size:11}} } } } });
+  new Chart(document.getElementById("c-priority"), { type: "doughnut",
+    data: { labels: Object.keys(a.byPriority), datasets: [{ data: Object.values(a.byPriority), backgroundColor: ["#4A5170","#E2A33D","#B65C38"] }] },
+    options: { plugins: { legend: { position: "bottom", labels:{boxWidth:10,font:{size:11}} } } } });
+  new Chart(document.getElementById("c-category"), { type: "bar",
+    data: { labels: Object.keys(a.byCategory), datasets: [{ data: Object.values(a.byCategory), backgroundColor: "#1F2A44" }] },
+    options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 10 } } } } } });
+  new Chart(document.getElementById("c-trend"), { type: "line",
+    data: { labels: a.weeklyTrend.map(w=>w.label), datasets: [{ data: a.weeklyTrend.map(w=>w.count), borderColor: "#E2A33D", backgroundColor: "rgba(226,163,61,0.15)", fill: true, tension: 0.3 }] },
+    options: { plugins: { legend: { display: false } } } });
+}
+
+switchTab("overview");
+</script>
+</body>
+</html>

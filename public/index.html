@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Smart Panchayat — Coimbatore District</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-nav">
+  <a href="index.html" class="brand">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#E2A33D" stroke-width="1.6"/><circle cx="12" cy="12" r="3.4" stroke="#1F2A44" stroke-width="1.6"/><circle cx="12" cy="4.2" r="1.1" fill="#1F2A44"/><circle cx="19.8" cy="12" r="1.1" fill="#1F2A44"/><circle cx="12" cy="19.8" r="1.1" fill="#1F2A44"/><circle cx="4.2" cy="12" r="1.1" fill="#1F2A44"/></svg>
+    Smart Panchayat
+  </a>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="complaint.html">Lodge a Complaint</a>
+    <a href="track.html">Track Status</a>
+    <a href="login.html">Officer Login</a>
+  </nav>
+  <a href="complaint.html" class="cta-mini">Lodge a Complaint</a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Coimbatore District · 12 Wards</span>
+      <h1>Your village,<br/><em>watching out</em><br/>for itself.</h1>
+      <p class="lede">A panchayat once meant a council under a banyan tree — everyone's
+        concern, heard in the open. Smart Panchayat brings that same accountability
+        online: lodge a grievance, watch it move through the ward office, and see
+        exactly who resolved it and when.</p>
+      <div class="actions">
+        <a href="complaint.html" class="btn btn-primary">Lodge a Complaint →</a>
+        <a href="track.html" class="btn btn-ghost">Track an Existing Complaint</a>
+      </div>
+    </div>
+    <div class="kolam-wrap">
+      <svg class="kolam-svg" viewBox="0 0 320 320" width="320" height="320">
+        <path d="M 255.0 160.0 Q 289.3 213.6 227.2 227.2 M 227.2 227.2 Q 213.6 289.3 160.0 255.0 M 160.0 255.0 Q 106.4 289.3 92.8 227.2 M 92.8 227.2 Q 30.7 213.6 65.0 160.0 M 65.0 160.0 Q 30.7 106.4 92.8 92.8 M 92.8 92.8 Q 106.4 30.7 160.0 65.0 M 160.0 65.0 Q 213.6 30.7 227.2 92.8 M 227.2 92.8 Q 289.3 106.4 255.0 160.0 M 204.3 178.4 Q 174.1 174.1 178.4 204.3 M 178.4 204.3 Q 160.0 180.0 141.6 204.3 M 141.6 204.3 Q 145.9 174.1 115.7 178.4 M 115.7 178.4 Q 140.0 160.0 115.7 141.6 M 115.7 141.6 Q 145.9 145.9 141.6 115.7 M 141.6 115.7 Q 160.0 140.0 178.4 115.7 M 178.4 115.7 Q 174.1 145.9 204.3 141.6 M 204.3 141.6 Q 180.0 160.0 204.3 178.4 M 255.0 160.0 L 204.3 178.4 M 160.0 255.0 L 141.6 204.3 M 65.0 160.0 L 115.7 141.6 M 160.0 65.0 L 178.4 115.7" />
+        <circle cx="255.0" cy="160.0" r="3.2" style="animation-delay:2.40s"/>
+        <circle cx="227.2" cy="227.2" r="3.2" style="animation-delay:2.21s"/>
+        <circle cx="160.0" cy="255.0" r="3.2" style="animation-delay:2.53s"/>
+        <circle cx="92.8" cy="227.2" r="3.2" style="animation-delay:2.60s"/>
+        <circle cx="65.0" cy="160.0" r="3.2" style="animation-delay:2.33s"/>
+        <circle cx="92.8" cy="92.8" r="3.2" style="animation-delay:2.27s"/>
+        <circle cx="160.0" cy="65.0" r="3.2" style="animation-delay:1.73s"/>
+        <circle cx="227.2" cy="92.8" r="3.2" style="animation-delay:2.11s"/>
+        <circle cx="204.3" cy="178.4" r="3.2" style="animation-delay:2.05s"/>
+        <circle cx="178.4" cy="204.3" r="3.2" style="animation-delay:2.35s"/>
+        <circle cx="141.6" cy="204.3" r="3.2" style="animation-delay:2.19s"/>
+        <circle cx="115.7" cy="178.4" r="3.2" style="animation-delay:2.54s"/>
+        <circle cx="115.7" cy="141.6" r="3.2" style="animation-delay:1.62s"/>
+        <circle cx="141.6" cy="115.7" r="3.2" style="animation-delay:2.28s"/>
+        <circle cx="178.4" cy="115.7" r="3.2" style="animation-delay:2.36s"/>
+        <circle cx="204.3" cy="141.6" r="3.2" style="animation-delay:2.67s"/>
+        <circle cx="160.0" cy="160.0" r="3.2" style="animation-delay:2.06s"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-strip" id="ticker-strip">
+  <div class="ticker-item"><div class="num" id="t-total">—</div><div class="label">Complaints Logged</div></div>
+  <div class="ticker-item"><div class="num" id="t-resolved">—</div><div class="label">Resolved</div></div>
+  <div class="ticker-item"><div class="num" id="t-avg">—</div><div class="label">Avg. Days to Resolve</div></div>
+  <div class="ticker-item"><div class="num">12</div><div class="label">Wards Covered</div></div>
+</div>
+
+<section class="section">
+  <div class="section-head" style="text-align:center;max-width:100%;">
+    <span class="eyebrow">How it works</span>
+    <h2>From doorstep to resolution, in the open</h2>
+    <div class="kolam-divider"><span class="dash"></span><span class="dot"></span><span class="dash"></span></div>
+  </div>
+  <div class="steps">
+    <div class="step-card"><span class="step-mark">01 — Lodge</span><h3>Describe the issue</h3><p>Tell us what's wrong, where, and add a photo if you have one. Takes under two minutes.</p></div>
+    <div class="step-card"><span class="step-mark">02 — Acknowledge</span><h3>Ward office reviews</h3><p>Your ward office reviews the complaint and confirms it's been received.</p></div>
+    <div class="step-card"><span class="step-mark">03 — Act</span><h3>Field team responds</h3><p>A field officer is assigned and works the issue — you can track progress by your complaint ID.</p></div>
+    <div class="step-card"><span class="step-mark">04 — Resolve</span><h3>Verified &amp; closed</h3><p>The officer records what was done and when. Nothing is marked resolved without a named signature.</p></div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--paper); border-radius:20px;">
+  <div class="section-head" style="text-align:center;max-width:100%;">
+    <span class="eyebrow">What you can report</span>
+    <h2>Common ward-level issues</h2>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card"><div class="icon">💧</div><div class="name">Water Supply</div></div>
+    <div class="cat-card"><div class="icon">🚧</div><div class="name">Roads &amp; Potholes</div></div>
+    <div class="cat-card"><div class="icon">💡</div><div class="name">Electricity &amp; Streetlight</div></div>
+    <div class="cat-card"><div class="icon">🗑️</div><div class="name">Garbage &amp; Sanitation</div></div>
+    <div class="cat-card"><div class="icon">🌊</div><div class="name">Drainage &amp; Sewage</div></div>
+    <div class="cat-card"><div class="icon">🏛️</div><div class="name">Public Property Damage</div></div>
+    <div class="cat-card"><div class="icon">🐕</div><div class="name">Stray Animals</div></div>
+    <div class="cat-card"><div class="icon">📋</div><div class="name">Other</div></div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;">
+  <span class="eyebrow">For ward officers &amp; administrators</span>
+  <h2 style="margin-top:8px;">One register, every ward, fully accountable</h2>
+  <p class="muted" style="max-width:56ch;margin:12px auto 24px;">Officers see only their assigned ward's queue. Administrators see the full
+    district register, resolution-time analytics, and a live map of every open issue.</p>
+  <a href="login.html" class="btn btn-dark">Officer / Admin Sign In →</a>
+</section>
+
+<footer class="site-footer">
+  <strong>Smart Panchayat</strong> — a prototype civic grievance portal for Coimbatore District, Tamil Nadu.<br/>
+  All names, complaints, and records shown are fictional demo data.
+</footer>
+
+<script src="js/api.js"></script>
+<script>
+(async function(){
+  try {
+    const stats = await apiGet("/api/public-stats");
+    document.getElementById("t-total").textContent = stats.total;
+    document.getElementById("t-resolved").textContent = stats.resolved;
+    document.getElementById("t-avg").textContent = stats.avgResolutionDays != null ? stats.avgResolutionDays : "—";
+  } catch(e) { console.error(e); }
+})();
+</script>
+</body>
+</html>

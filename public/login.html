@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Officer Login — Smart Panchayat</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="login-shell">
+  <div class="login-card">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#E2A33D" stroke-width="1.6"/><circle cx="12" cy="12" r="3.4" stroke="#1F2A44" stroke-width="1.6"/><circle cx="12" cy="4.2" r="1.1" fill="#1F2A44"/><circle cx="19.8" cy="12" r="1.1" fill="#1F2A44"/><circle cx="12" cy="19.8" r="1.1" fill="#1F2A44"/><circle cx="4.2" cy="12" r="1.1" fill="#1F2A44"/></svg>
+      Smart Panchayat
+    </div>
+    <p class="sub">Ward Office &amp; Administration Portal</p>
+    <div class="demo-note">
+      Prototype demo login. Try:<br/>
+      Officer: <code>officer@smartpanchayat.demo</code> / <code>officer123</code><br/>
+      Admin: <code>admin@smartpanchayat.demo</code> / <code>admin123</code>
+    </div>
+    <form id="login-form">
+      <div class="field">
+        <label>Email</label>
+        <input id="email" value="admin@smartpanchayat.demo" />
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input id="password" type="password" value="admin123" />
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Sign In</button>
+      <div id="login-error" style="color:#B65C38;font-size:13px;margin-top:10px;min-height:16px;"></div>
+    </form>
+    <p style="text-align:center;margin-top:16px;"><a href="index.html" class="muted" style="font-size:13px;text-decoration:none;">← Back to citizen site</a></p>
+  </div>
+</div>
+<script src="js/api.js"></script>
+<script>
+document.getElementById("login-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+  try {
+    const res = await apiSend("POST", "/api/auth/login", { email, password });
+    localStorage.setItem("sp_token", res.token);
+    localStorage.setItem("sp_user", JSON.stringify(res.user));
+    location.href = "dashboard.html";
+  } catch (err) {
+    document.getElementById("login-error").textContent = err.message || "Invalid credentials.";
+  }
+});
+</script>
+</body>
+</html>
