@@ -61,7 +61,7 @@ node seed.js        # generates server/data/complaints.json (run once)
 node server.js
 ```
 
-Then open **http://localhost:4000**.
+Then open **http://localhost:4000**.  **https://smart-panchayat-v2.onrender.com/index.html**
 
 ---
 
